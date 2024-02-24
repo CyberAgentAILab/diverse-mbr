@@ -1,0 +1,51 @@
+# Diverse Minimum Bayes Risk Decoding
+
+This repository contains the code for the experiments in [Generating Diverse and High-Quality Texts by Minimum Bayes Risk Decoding](https://arxiv.org/abs/2401.05054).
+
+The code is provided mostly as is with little effort on refactoring.
+
+## Installation
+
+```
+git clone git@github.com/jinnaiyuu/diverse-mbr
+cd diverse-mbr
+pip install requirements.txt
+```
+
+## Usage
+
+The code runs in two steps.
+1. `sample.sh` samples candidates.
+2. `run_mbr.sh ` computes the MBR candidate from the candidates sampled.
+
+### Sampling candidates
+
+```
+./experiments/sample.sh -d [DATASET] -s [NUMBER OF SAMPLES] 
+```
+
+Sampling sequences on WMT'19 En-De
+
+```
+./experiments/sample.sh -d wmt19.en-de
+```
+
+### Computing Diverse MBR and KMBR
+
+```
+./experiments/run_mbr.sh -d [DATASET] -s [NUMBER OF SAMPLES] -a [ALGORITHM]
+```
+
+### Example
+
+Computing the Diverse MBR output on WMT'19 En-De
+
+```
+./experiments/run_mbr.sh -d wmt19.en-de -a diverse
+```
+
+Computing the k-Medoid MBR output on WMT'19 En-De
+
+```
+./experiments/run_mbr.sh -d wmt19.en-de -a kmmbr
+```

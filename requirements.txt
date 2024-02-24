@@ -1,0 +1,20 @@
+transformers==4.36.2 # git+https://github.com/huggingface/transformers.git@9e87618f2be1401df55c36ad726629ae201e8e4d
+git+https://github.com/google-research/bleurt.git@cebe7e6f996b40910cfaa520a63db47807e3bf5c
+py7zr
+datasets==2.10
+einops
+accelerate==0.26.0
+bitsandbytes==0.40.2
+evaluate==0.4.0
+bert_score==0.3.13
+unbabel-comet==2.1.1
+absl-py
+nltk==3.8.1
+rouge-score==0.1.2
+sacremoses==0.0.53
+sortedcontainers
+subword-nmt==0.3.8
+google-cloud-storage
+scikit-learn-extra==0.3.0
+torchmetrics==0.10.3
+peft==0.7.1
