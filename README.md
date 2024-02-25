@@ -66,4 +66,4 @@ Bibtex:
 ```
 
 ## Contact
-For any questions, feel free to raise an issue or contact me at jinnai_yuu@cyberagent.co.jp.
+For any questions, feel free to raise an issue or contact me at jinnai_yu@cyberagent.co.jp.
