@@ -49,3 +49,21 @@ Computing the k-Medoid MBR output on WMT'19 En-De
 ```
 ./experiments/run_mbr.sh -d wmt19.en-de -a kmmbr
 ```
+
+
+## Reference
+
+[Jinnai, Y., Honda, U., Morimura, T., & Zhang, P. (2024). Generating Diverse and High-Quality Texts by Minimum Bayes Risk Decoding. arXiv preprint arXiv:2401.05054.](https://arxiv.org/abs/2401.05054)
+
+Bibtex:
+```
+@article{jinnai2024generating,
+      title={Generating Diverse and High-Quality Texts by Minimum Bayes Risk Decoding}, 
+      author={Yuu Jinnai and Ukyo Honda and Tetsuro Morimura and Peinan Zhang},
+      year={2024},
+      journal={arXiv preprint arXiv:2401.05054}
+}
+```
+
+## Contact
+For any questions, feel free to raise an issue or contact me at jinnai_yuu@cyberagent.co.jp.
