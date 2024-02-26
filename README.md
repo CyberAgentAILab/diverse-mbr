@@ -24,27 +24,33 @@ The code runs in two steps.
 ./experiments/sample.sh -d [DATASET] -s [NUMBER OF SAMPLES] 
 ```
 
-Sampling sequences on WMT'19 En-De
-
-```
-./experiments/sample.sh -d wmt19.en-de
-```
-
 ### Computing Diverse MBR and KMBR
 
 ```
 ./experiments/run_mbr.sh -d [DATASET] -s [NUMBER OF SAMPLES] -a [ALGORITHM]
 ```
 
-### Example
+### Example on WMT'19 En-De
 
-Computing the Diverse MBR output on WMT'19 En-De
+1. Use [sacrebleu](https://github.com/mjpost/sacrebleu) to prepare the benchmark dataset.
+```
+sacrebleu -t wmt19 -l en-de --echo src > ./dataset/wmt19-text/wmt19.en-de.en
+sacrebleu -t wmt19 -l en-de --echo ref > ./dataset/wmt19-text/wmt19.en-de.de
+```
+
+2. Sample candidates on WMT'19 En-De
+
+```
+./experiments/sample.sh -d wmt19.en-de
+```
+
+3. Computing the Diverse MBR output on WMT'19 En-De
 
 ```
 ./experiments/run_mbr.sh -d wmt19.en-de -a diverse
 ```
 
-Computing the k-Medoid MBR output on WMT'19 En-De
+4. Computing the k-Medoid MBR output on WMT'19 En-De
 
 ```
 ./experiments/run_mbr.sh -d wmt19.en-de -a kmmbr
