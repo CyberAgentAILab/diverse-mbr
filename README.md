@@ -16,7 +16,7 @@ pip install requirements.txt
 
 The code runs in two steps.
 1. `sample.sh` samples candidates.
-2. `run_mbr.sh ` computes the MBR candidate from the candidates sampled.
+2. `run_mbr.sh` computes the MBR candidate from the candidates sampled.
 
 ### Sampling candidates
 
