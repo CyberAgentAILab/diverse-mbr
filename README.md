@@ -7,7 +7,7 @@ The code is provided mostly as is with little effort on refactoring.
 ## Installation
 
 ```
-git clone git@github.com/CyberAgentAILab/diverse-mbr
+git clone git@github.com:CyberAgentAILab/diverse-mbr
 cd diverse-mbr
 pip install requirements.txt
 ```
