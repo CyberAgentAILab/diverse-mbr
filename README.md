@@ -9,7 +9,7 @@ The code is provided mostly as is with little effort on refactoring.
 ```
 git clone git@github.com:CyberAgentAILab/diverse-mbr
 cd diverse-mbr
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Usage
