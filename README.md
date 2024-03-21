@@ -34,6 +34,7 @@ The code runs in two steps.
 
 1. Use [sacrebleu](https://github.com/mjpost/sacrebleu) to prepare the benchmark dataset.
 ```
+mkdir -p ./dataset/wmt19-text
 sacrebleu -t wmt19 -l en-de --echo src > ./dataset/wmt19-text/wmt19.en-de.en
 sacrebleu -t wmt19 -l en-de --echo ref > ./dataset/wmt19-text/wmt19.en-de.de
 ```
