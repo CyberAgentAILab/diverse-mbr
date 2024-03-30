@@ -3,7 +3,6 @@ import json
 import os
 from parser import get_mbr_parser
 
-import boto3
 import numpy as np
 import pandas as pd
 from comet import download_model, load_from_checkpoint
@@ -85,9 +84,7 @@ if __name__ == "__main__":
     model_n = os.path.basename(model_name)
 
     os.makedirs(os.path.join(matrix_dir, dataset, model_n), exist_ok=True)
-    # os.makedirs(os.path.join(approx_dir, dataset, model_n), exist_ok=True)
-    # os.makedirs(os.path.join(diverse_dir, dataset, model_n), exist_ok=True)
-    # sample_dir = os.path.join('samples', dataset, model_n)
+    os.makedirs(os.path.join(result_dir), exist_ok=True)
 
     files = sorted(os.listdir(sample_dir))
 
@@ -268,7 +265,7 @@ if __name__ == "__main__":
         postfix = ""
     elif algorithm == "diverse":
         columns = ["sample_id"]
-        methods = ["kmbr", "kmmbr"] + [
+        methods = ["mbr", "kmbr"] + [
             "dmbr-{}".format(div_pen) for div_pen in diverse_pens
         ]
         metrics = [

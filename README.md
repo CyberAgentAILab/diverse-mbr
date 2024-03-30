@@ -45,16 +45,10 @@ sacrebleu -t wmt19 -l en-de --echo ref > ./dataset/wmt19-text/wmt19.en-de.de
 ./experiments/sample.sh -d wmt19.en-de
 ```
 
-3. Computing the Diverse MBR output on WMT'19 En-De
+3. Computing Diverse MBR and K-Medoid MBR on WMT'19 En-De
 
 ```
-./experiments/run_mbr.sh -d wmt19.en-de -a diverse
-```
-
-4. Computing the k-Medoid MBR output on WMT'19 En-De
-
-```
-./experiments/run_mbr.sh -d wmt19.en-de -a kmmbr
+./experiments/run_mbr.sh -d wmt19.en-de -m wmt19-en-de -a diverse
 ```
 
 

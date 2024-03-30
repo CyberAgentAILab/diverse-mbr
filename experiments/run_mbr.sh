@@ -1,10 +1,10 @@
 # Default parameters are set to run a debug experiment.
 
-DOMAIN=xsum
-MODEL=bart-large-xsum
+DOMAIN=wmt19.en-de
+MODEL=wmt19-en-de
 NLINES=3
 NSAMPLES=5
-EPS=0.02
+EPS=0.01
 TOPK=0
 TOPP=1.0
 SIM=bertscore
