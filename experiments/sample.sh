@@ -1,4 +1,4 @@
-DOMAIN=xsum
+DOMAIN=wmt19.en-de
 MODEL=None # Use "None" for using the sequence-to-sequence models.
 PROMPT=None
 NLINES=3
