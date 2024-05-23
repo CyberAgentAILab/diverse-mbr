@@ -2,6 +2,7 @@
 
 This repository contains the code for the experiments in [Generating Diverse and High-Quality Texts by Minimum Bayes Risk Decoding](https://arxiv.org/abs/2401.05054).
 
+The code is tested on Ubuntu 20.04 using Python 3.8 and CUDA 11.0 (Docker image nvidia/cuda:11.0.3-cudnn8-devel-ubuntu20.04).
 The code is provided mostly as is with little effort on refactoring.
 
 ## Installation
