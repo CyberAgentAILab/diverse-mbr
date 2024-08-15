@@ -1,6 +1,6 @@
 # Diverse Minimum Bayes Risk Decoding
 
-This repository contains the code for the experiments in [Generating Diverse and High-Quality Texts by Minimum Bayes Risk Decoding](https://arxiv.org/abs/2401.05054).
+This repository contains the code for the experiments in [Generating Diverse and High-Quality Texts by Minimum Bayes Risk Decoding](https://aclanthology.org/2024.findings-acl.503/).
 
 The code is tested on Ubuntu 20.04 using Python 3.8 and CUDA 11.0 (Docker image nvidia/cuda:11.0.3-cudnn8-devel-ubuntu20.04).
 The code is provided mostly as is with little effort on refactoring.
@@ -55,15 +55,26 @@ sacrebleu -t wmt19 -l en-de --echo ref > ./dataset/wmt19-text/wmt19.en-de.de
 
 ## Reference
 
-[Jinnai, Y., Honda, U., Morimura, T., & Zhang, P. (2024). Generating Diverse and High-Quality Texts by Minimum Bayes Risk Decoding. arXiv preprint arXiv:2401.05054.](https://arxiv.org/abs/2401.05054)
+[Yuu Jinnai, Ukyo Honda, Tetsuro Morimura, and Peinan Zhang. 2024. Generating Diverse and High-Quality Texts by Minimum Bayes Risk Decoding. In Findings of the Association for Computational Linguistics ACL 2024, pages 8494–8525, Bangkok, Thailand and virtual meeting. Association for Computational Linguistics.](https://aclanthology.org/2024.findings-acl.503/)
 
 Bibtex:
 ```
-@article{jinnai2024generating,
-      title={Generating Diverse and High-Quality Texts by Minimum Bayes Risk Decoding}, 
-      author={Yuu Jinnai and Ukyo Honda and Tetsuro Morimura and Peinan Zhang},
-      year={2024},
-      journal={arXiv preprint arXiv:2401.05054}
+@inproceedings{jinnai-etal-2024-generating,
+    title = "Generating Diverse and High-Quality Texts by Minimum {B}ayes Risk Decoding",
+    author = "Jinnai, Yuu  and
+      Honda, Ukyo  and
+      Morimura, Tetsuro  and
+      Zhang, Peinan",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Findings of the Association for Computational Linguistics ACL 2024",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand and virtual meeting",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-acl.503",
+    pages = "8494--8525",
 }
 ```
 
